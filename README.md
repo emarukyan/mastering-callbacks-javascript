@@ -13,23 +13,21 @@ General limitations
 
 
 ---
-1. Write a function that accepts another function as an argument and call that function passing a number
+### 1. Write a function that accepts another function as an argument and call that function passing a number
 
 
 ---
-2. Assume you have function
+### 2. Assume you have function
 ```javascript
-const giveRand = callback => {
-  callback(Math.random())
-}
+const giveRand = callback => callback(Math.random())
 ```
 
-### TASK
+#### TASK
 Write a function that calls function 'giveRand' 10 times and averages the results.
 
 
 ---
-3. Assume you have a function and an array
+### 3. Assume you have a function and an array
 ```javascript
 const f = (argument, callback) => {
   if (argument === 4) {
@@ -42,7 +40,7 @@ const f = (argument, callback) => {
 const array = [2, 3, 4, 5, 6, 7, 8]
 ```
 
-### TASK
+#### TASK
 Write a function that calls function 'f' for each element of an array,
 starting from the first one, and if callback receives 'true', stop calling 'f'
 
@@ -51,7 +49,7 @@ starting from the first one, and if callback receives 'true', stop calling 'f'
 
 ## Async Callbacks, setTimeout, setInterval
 
-4. Assume you have an async function and an array
+### 4. Assume you have an async function and an array
 ```javascript
 const giveTrueIf4Async = (arg, callback) => {
   const result = arg === 4
@@ -61,14 +59,14 @@ const giveTrueIf4Async = (arg, callback) => {
 const array = [2, 3, 4, 5, 6, 7, 8]
 ```
 
-### TASK
+#### TASK
 Write a function that calls function 'giveTrueIf4Async' for each element of an array,
 one at a time, starting from the first one, and if callback receives 'true',
 stop calling 'giveTrueIf4Async'
 
 
 ---
-5. Assume you have async function, that give random numbers to callback
+### 5. Assume you have async function, that give random numbers to callback
 ```javascript
 const giveRandAsync = callback => {
   const f = () => callback(Math.random())
@@ -76,7 +74,7 @@ const giveRandAsync = callback => {
 }
 ```
 
-### TASK
+#### TASK
 - Call function 'giveRandAsync' 10 times and gather results in an array
 - Call function 'giveRandAsync' 10 times, one at a time, and average the results
 - Call function 'giveRandAsync' 10 times, one at a time with 20 second interval, and average the results
@@ -85,14 +83,14 @@ const giveRandAsync = callback => {
 ---
 
 ## Super Dudes
-### TASK
+#### TASK
 Write your own implementation of async.waterfall function
 Write your own implementation of async.parallel function
 
 ---
 
 ## Promises
-### TASK
+#### TASK
 - Write your own implementation of bluebird's functions.
 - Promise.map
 - Promise.all
