@@ -70,7 +70,7 @@ stop calling 'giveTrueIf4Async'
 ```javascript
 const giveRandAsync = callback => {
   const f = () => callback(Math.random())
-  setTimeout(func, 10)
+  setTimeout(f, 10)
 }
 ```
 
