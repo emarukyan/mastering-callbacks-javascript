@@ -19,7 +19,9 @@ General limitations
 ---
 ### 2. Assume you have function
 ```javascript
-const giveRand = callback => callback(Math.random())
+const giveRand = callback => {
+  callback(Math.random())
+}
 ```
 
 #### TASK
