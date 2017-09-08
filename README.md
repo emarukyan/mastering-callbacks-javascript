@@ -1,4 +1,4 @@
-#Mastering Callbacks!
+# Mastering Callbacks!
 
 General limitations.
 -Read this first http://eloquentjavascript.net/05_higher_order.html
@@ -14,15 +14,18 @@ General limitations.
 
 //////////////////////////////////////////////////////////
 2. Assume you have function
+```javascript
 const giveRand = callback => {
   callback(Math.random())
 }
+```
 
 // TASK
 Write a function that calls function 'giveRand' 10 times and averages the results.
 
 //////////////////////////////////////////////////////////
 3. Assume you have a function and an array
+```javascript
 const f = (argument, callback) => {
   if (argument === 4) {
     callback(false)
@@ -32,6 +35,7 @@ const f = (argument, callback) => {
 }
 
 const array = [2, 3, 4, 5, 6, 7, 8]
+```
 
 // TASK
 Write a function that calls function 'f' for each element of an array,
@@ -40,12 +44,14 @@ starting from the first one, and if callback receives 'true', stop calling 'f'
 Async Callbacks, setTimeout, setInterval
 //////////////////////////////////////////////////////////
 4. Assume you have an async function and an array
+```javascript
 const giveTrueIf4Async = (arg, callback) => {
   const result = arg === 4
   const f = () => callback(result)
   setTimeout(func, 10)
 }
 const array = [2, 3, 4, 5, 6, 7, 8]
+```
 
 // TASK
 Write a function that calls function 'giveTrueIf4Async' for each element of an array,
@@ -54,10 +60,12 @@ stop calling 'giveTrueIf4Async'
 
 //////////////////////////////////////////////////////////
 5. Assume you have async function, that give random numbers to callback
+```javascript
 const giveRandAsync = callback => {
   const f = () => callback(Math.random())
   setTimeout(func, 10)
 }
+```
 
 // TASK
 Call function 'giveRandAsync' 10 times and gather results in an array
