@@ -1,13 +1,14 @@
 # Mastering Callbacks!
 
-General limitations.
+General limitations
 
--Read this first http://eloquentjavascript.net/05_higher_order.html
--You are not allowed to change input variable of a any function.
--You are allowed to use only 'const' for declaring variables and functions.
--You are not allowed to use any of ++ or -- operators.
--You are not allowed to use 'delete' operator
--You are not allowed to use .shift, .splice or any function that mutates an array in place.
+- Read this first http://eloquentjavascript.net/05_higher_order.html
+- You are not allowed to change input variable of a any function.
+- You are allowed to use only 'const' for declaring variables and functions.
+- You are not allowed to use any of ++ or -- operators.
+- You are not allowed to use 'delete' operator
+- You are not allowed to use .shift, .splice or any function that mutates an array in place.
+
 * First write without limitations, then refactor code to match limitations
 
 
@@ -84,7 +85,7 @@ const giveRandAsync = callback => {
 ---
 
 ## Super Dudes
-// TASK
+### TASK
 Write your own implementation of async.waterfall function
 Write your own implementation of async.parallel function
 
