@@ -1,4 +1,4 @@
-# Mastering Callbacks!
+# Mastering JavaScript Callbacks!
 
 General limitations
 
