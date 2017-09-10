@@ -7,7 +7,7 @@ General limitations
 - You are allowed to use only 'const' for declaring variables and functions.
 - You are not allowed to use any of ++ or -- operators.
 - You are not allowed to use 'delete' operator
-- You are not allowed to use .shift, .splice or any function that mutates an array in place.
+- You are not allowed to use .shift, .splice, .push or any function that mutates an array in place.
 - You cannot mutate and created object. example: const a = {key: 1}; a.key = 123
 
 * First write without limitations, then refactor code to match limitations
