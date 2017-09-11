@@ -86,6 +86,9 @@ const giveRandAsync = callback => {
 ---
 
 ## Super Dudes
+
+`Array.push is allowed here`
+
 #### TASK
 Write your own implementation of async.waterfall function
 Write your own implementation of async.parallel function
