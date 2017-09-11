@@ -3,12 +3,12 @@
 General limitations
 
 - Read this first http://eloquentjavascript.net/05_higher_order.html
-- You are not allowed to change input variable of a any function.
-- You are allowed to use only 'const' for declaring variables and functions.
-- You are not allowed to use any of ++ or -- operators.
-- You are not allowed to use 'delete' operator
-- You are not allowed to use .shift, .splice, .push or any function that mutates an array in place.
-- You cannot mutate and created object. example: const a = {key: 1}; a.key = 123
+1. You are not allowed to change input variable of a any function.
+2. You are allowed to use only 'const' for declaring variables and functions.
+3. You are not allowed to use any of ++ or -- operators.
+4. You are not allowed to use 'delete' operator
+5. You are not allowed to use .shift, .splice, .push or any function that mutates an array in place.
+6. You cannot mutate and created object. example: const a = {key: 1}; a.key = 123
 
 * First write without limitations, then refactor code to match limitations
 
