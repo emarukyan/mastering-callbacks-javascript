@@ -57,7 +57,7 @@ starting from the first one, and if callback receives 'true', stop calling 'f'
 const giveTrueIf4Async = (arg, callback) => {
   const result = arg === 4
   const f = () => callback(result)
-  setTimeout(func, 10)
+  setTimeout(f, 10)
 }
 const array = [2, 3, 4, 5, 6, 7, 8]
 ```
