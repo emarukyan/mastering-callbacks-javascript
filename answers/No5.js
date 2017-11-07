@@ -47,16 +47,24 @@ const asyncAvargeWithDelay = (callback, sum = 0, i = 0) => {
 //======> subtask 4
 // Call function 'giveRandAsync' 10 times, all at once, and average the results.
 
+const promiseAll = (array, i = array.length - 1) => {
+    if(i === -1) {
+        console.log('array is ->', array);
+        console.log('result is ->', array.reduce((a, b) => a + b) / 10);
+        return;
+    }
+    array[i].then(res => {
+        array[i] = res;
+        promiseAll(array, i - 1)
+    })
+}
+
 const allAtOnce = (callback, arr = []) => {
     if(arr.length === 10) {
-        return Promise.all(arr)
+        return  arr;
     }
     return allAtOnce(callback, [...arr, new Promise(resolve => {
         callback(rand => resolve(rand));
     })])
 }
-
-allAtOnce(giveRandAsync)
-.then(res => {
-    console.log(res.reduce((a, b) => a + b) / 10);  
-});
+promiseAll(allAtOnce(giveRandAsync));
